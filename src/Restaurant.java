@@ -7,24 +7,18 @@ public class Restaurant {
     private String phoneNumber;
     private ArrayList<menuItem> menu =  new ArrayList<menuItem>();
 
-    void setName(String name){
-        this.name = name;
+    public Restaurant(String businessName, String restaurantAddress, String number){
+        name = businessName;
+        address = restaurantAddress;
+        phoneNumber = number;
     }
 
     String getName(){
         return name;
     }
 
-    void setAddress(String address){
-        this.address = address;
-    }
-
     String getAddress(){
         return address;
-    }
-
-    void setPhoneNumber(String phoneNumber){
-        this.phoneNumber = phoneNumber;
     }
 
     String getPhoneNumber(){
@@ -33,5 +27,9 @@ public class Restaurant {
 
     void addMenuItem(menuItem item){
         menu.add(item);
+    }
+
+    ArrayList getMenu(){
+        return menu;
     }
 }
