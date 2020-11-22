@@ -4,16 +4,13 @@ public class menuItem {
     private String dishName;
     private String dishDesc;
 
-    public menuItem(String dishTitle){
+    public menuItem(String dishTitle, String cost){
         dishName = dishTitle;
+        price = cost;
     }
 
     String getPrice() {
         return price;
-    }
-
-    void setPrice(String price){
-        this.price = price;
     }
 
     String getDishName() {

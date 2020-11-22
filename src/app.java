@@ -10,14 +10,8 @@ public class app {
         String address = harrys_charbroiled.getAddress();
         String phoneNumber = harrys_charbroiled.getPhoneNumber();
 
-        menuItem cheeseburger = new menuItem("Cheeseburger");
-        menuItem french_fries = new menuItem("French Fries");
-
-        cheeseburger.setDishDesc("Two flame-broiled smash patties with medium cheddar cheese. ");
-        cheeseburger.setPrice("$8.44");
-
-        french_fries.setDishDesc("Hand-cut french fries, deepfryed in peanut oil");
-        french_fries.setPrice("$4.00");
+        menuItem cheeseburger = new menuItem("Cheeseburger", "8.44");
+        menuItem french_fries = new menuItem("French Fries", "4.00");
 
         harrys_charbroiled.addMenuItem(french_fries);
         harrys_charbroiled.addMenuItem(cheeseburger);
@@ -26,10 +20,8 @@ public class app {
 
         menuItem first_menu_item = harrys_menu.get(1);
 
-        String first_menu_item_name = first_menu_item.getDishName();
-
         System.out.println(name + "\n" + address + "\n" + phoneNumber);
 
-        System.out.print(first_menu_item_name);
+        System.out.print((first_menu_item.getDishName() + " " + first_menu_item.getPrice()));
     }
 }

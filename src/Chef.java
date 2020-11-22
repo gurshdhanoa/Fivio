@@ -6,7 +6,7 @@ public class Chef {
     private String last_name;
     private ArrayList<Restaurant> restaurant_suggestions = new ArrayList<Restaurant>();
 
-    void setFirstAndLastName(String first_name, String last_name){
+    public Chef(String first_name, String last_name){
         this.first_name = first_name;
         this.last_name = last_name;
     }
